@@ -1,0 +1,10 @@
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Scenario & Attacked-station commands per day & Accepted, signature only (\%) & Accepted, full contract rules (\%) & Rejected: bad signature & Rejected: stale nonce & Rejected: out of policy \\
+\midrule
+MITM, forged command & 61 & 0 & 0 & 61 & 0 & 0 \\
+MITM, stolen gateway key & 61 & 100 & 100 & 0 & 0 & 0 \\
+Replay of an off-peak command & 61 & 100 & 0 & 0 & 61 & 0 \\
+DDoS & 0 & -- & -- & 0 & 0 & 0 \\
+\bottomrule
+\end{tabular}

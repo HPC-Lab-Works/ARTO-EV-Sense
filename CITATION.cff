@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article."
+title: "ARTO-EV synthetic testbench"
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Vivek
+  - family-names: Shrivastava
+    given-names: Sarika
+  - family-names: Balusamy
+    given-names: Balamurugan
+    orcid: "https://orcid.org/0000-0003-2805-4951"
+  - family-names: Gharibian
+    given-names: Lucine
+  - family-names: Yogarayan
+    given-names: Sumendra
+repository-code: "https://github.com/HPC-Lab-Works/ARTO-EV-Sense"
+license: MIT
+abstract: "Synthetic testbed, controllers, detectors, permissioned-ledger prototype and experiment scripts for ARTO-EV, a sensor-driven reinforcement learning framework with anomaly detection for secure management of electric vehicle charging networks."

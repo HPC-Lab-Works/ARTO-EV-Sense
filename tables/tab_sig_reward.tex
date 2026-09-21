@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Defense & No attack & MITM, forged command & MITM, stolen gateway key & Replay of an off-peak command & DDoS \\
+\midrule
+No defense & 127.8 $\pm$ 2.1 & 113.9 $\pm$ 3.2 & 113.9 $\pm$ 3.2 & 113.9 $\pm$ 3.5 & 126.9 $\pm$ 1.9 \\
+AE screening & 126.5 $\pm$ 2.0 & 116.6 $\pm$ 2.7 & 116.6 $\pm$ 2.7 & 116.7 $\pm$ 2.7 & 118.0 $\pm$ 2.4 \\
+Signature only & 127.8 $\pm$ 2.1 & 125.3 $\pm$ 2.1 & 113.9 $\pm$ 3.2 & 113.9 $\pm$ 3.5 & 126.9 $\pm$ 1.9 \\
+Signature, nonce, policy & 127.8 $\pm$ 2.1 & 125.3 $\pm$ 2.1 & 113.9 $\pm$ 3.2 & 125.3 $\pm$ 2.1 & 126.9 $\pm$ 1.9 \\
+Signature, nonce, policy, safe fallback & 127.8 $\pm$ 2.1 & 121.5 $\pm$ 2.5 & 113.9 $\pm$ 3.2 & 121.5 $\pm$ 2.5 & 126.9 $\pm$ 1.9 \\
+Full (contract rules and AE screening) & 126.5 $\pm$ 2.0 & 118.4 $\pm$ 2.5 & 116.6 $\pm$ 2.7 & 118.4 $\pm$ 2.5 & 118.0 $\pm$ 2.4 \\
+\midrule
+No defense & 114.3 $\pm$ 3.3 & 103.3 $\pm$ 3.5 & 103.3 $\pm$ 3.5 & 106.4 $\pm$ 3.8 & 114.0 $\pm$ 3.1 \\
+AE screening & 113.3 $\pm$ 3.3 & 106.8 $\pm$ 3.2 & 106.8 $\pm$ 3.2 & 107.1 $\pm$ 3.1 & 107.8 $\pm$ 3.1 \\
+Signature only & 114.3 $\pm$ 3.3 & 113.8 $\pm$ 3.1 & 103.3 $\pm$ 3.5 & 106.4 $\pm$ 3.8 & 114.0 $\pm$ 3.1 \\
+Signature, nonce, policy & 114.3 $\pm$ 3.3 & 113.8 $\pm$ 3.1 & 103.3 $\pm$ 3.5 & 113.8 $\pm$ 3.1 & 114.0 $\pm$ 3.1 \\
+Signature, nonce, policy, safe fallback & 114.3 $\pm$ 3.3 & 110.2 $\pm$ 3.2 & 103.3 $\pm$ 3.5 & 110.2 $\pm$ 3.2 & 114.0 $\pm$ 3.1 \\
+Full (contract rules and AE screening) & 113.3 $\pm$ 3.3 & 108.0 $\pm$ 3.1 & 106.8 $\pm$ 3.2 & 108.0 $\pm$ 3.1 & 107.8 $\pm$ 3.1 \\
+\bottomrule
+\end{tabular}

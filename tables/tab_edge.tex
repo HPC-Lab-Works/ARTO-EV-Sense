@@ -1,0 +1,13 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+ & & \multicolumn{3}{c}{FP32} & \multicolumn{2}{c}{INT8 (dynamic)} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+Model & Parameters & Size (kB) & p50 (ms) & p95 (ms) & Size (kB) & p50 (ms) \\
+\midrule
+Autoencoder (edge, per station) & 13,544 & 56.1 & 0.074 & 0.132 & 19.8 & 0.179 \\
+Autoencoder (10 stations batch) & 13,544 & 56.1 & 0.094 & 0.163 & 19.8 & 0.215 \\
+LSTM autoencoder & 14,410 & 59.6 & 0.581 & 0.683 & 20.4 & 0.814 \\
+LSTM forecaster & 23,172 & 93.6 & 0.426 & 0.524 & 29.1 & 1.092 \\
+PPO actor & 18,946 & 76.7 & 0.057 & 0.110 & 23.9 & 0.134 \\
+\bottomrule
+\end{tabular}

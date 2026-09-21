@@ -1,0 +1,7 @@
+# versions used for the reported results (Python 3.11)
+torch==2.14.0
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.9
+cryptography==46.0.7

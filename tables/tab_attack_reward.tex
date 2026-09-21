@@ -1,0 +1,21 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Controller & No attack & FDI (40\% of stations) & FDI, load masking (all stations) & MITM (40\%) & DDoS (40\%) \\
+\midrule
+Static & 68.9 $\pm$ 2.8 & 68.9 $\pm$ 2.8 & 68.9 $\pm$ 2.8 & 61.1 $\pm$ 3.1 & 68.9 $\pm$ 2.8 \\
+Best fixed price & 110.4 $\pm$ 2.2 & 110.4 $\pm$ 2.2 & 110.4 $\pm$ 2.2 & 98.1 $\pm$ 3.0 & 110.4 $\pm$ 2.2 \\
+TOU & 118.8 $\pm$ 1.5 & 118.8 $\pm$ 1.5 & 118.8 $\pm$ 1.5 & 107.3 $\pm$ 2.9 & 118.7 $\pm$ 1.4 \\
+Rule-based & 114.3 $\pm$ 3.3 & 114.2 $\pm$ 3.3 & 115.2 $\pm$ 2.9 & 103.3 $\pm$ 3.5 & 114.0 $\pm$ 3.1 \\
+DQN & 128.8 $\pm$ 4.8 & 128.8 $\pm$ 4.6 & 125.9 $\pm$ 5.6 & 115.6 $\pm$ 5.0 & 126.3 $\pm$ 4.6 \\
+SAC & 134.6 $\pm$ 1.5 & 134.5 $\pm$ 1.6 & 133.7 $\pm$ 1.4 & 119.6 $\pm$ 2.5 & 131.9 $\pm$ 1.4 \\
+TD3 & 136.0 $\pm$ 1.2 & 135.9 $\pm$ 1.4 & 134.8 $\pm$ 1.8 & 120.4 $\pm$ 2.3 & 132.5 $\pm$ 1.9 \\
+PPO, no screening & 127.8 $\pm$ 2.1 & 127.7 $\pm$ 1.9 & 127.5 $\pm$ 1.8 & 113.9 $\pm$ 3.2 & 126.9 $\pm$ 1.9 \\
+\midrule
+Rule-based + AE screening & 113.3 $\pm$ 3.3 & 110.9 $\pm$ 3.1 & 106.7 $\pm$ 2.4 & 106.8 $\pm$ 3.2 & 107.8 $\pm$ 3.1 \\
+PPO + rule-based IDS & 126.6 $\pm$ 1.9 & 122.8 $\pm$ 2.4 & 115.5 $\pm$ 1.8 & 117.0 $\pm$ 2.8 & 118.2 $\pm$ 2.7 \\
+PPO + isolation forest & 124.4 $\pm$ 2.5 & 123.1 $\pm$ 2.6 & 122.6 $\pm$ 2.9 & 114.9 $\pm$ 2.4 & 117.0 $\pm$ 2.6 \\
+PPO + one-class SVM & 126.0 $\pm$ 2.0 & 122.1 $\pm$ 2.4 & 115.3 $\pm$ 1.8 & 116.5 $\pm$ 2.9 & 117.5 $\pm$ 2.8 \\
+PPO + LSTM autoencoder & 126.9 $\pm$ 1.9 & 123.1 $\pm$ 2.2 & 115.8 $\pm$ 2.0 & 117.0 $\pm$ 2.7 & 118.2 $\pm$ 2.5 \\
+PPO + AE screening (ARTO-EV) & 126.5 $\pm$ 2.0 & 122.8 $\pm$ 2.3 & 115.6 $\pm$ 2.0 & 116.6 $\pm$ 2.7 & 118.0 $\pm$ 2.4 \\
+\bottomrule
+\end{tabular}
