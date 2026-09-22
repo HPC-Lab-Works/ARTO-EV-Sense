@@ -286,7 +286,8 @@ def scale():
             cells.append(f"{v.mean():.1f}")
         best = int(np.argmax([SUM["shift"][f"{s}|{c}"][0] for c in cs]))
         cells[best] = "\\textbf{" + cells[best] + "}"
-        lines.append(f"{s} & " + " & ".join(cells) + " \\\\")
+        label = s.replace("%", "\\%").replace("+8 C", "+8~\\textdegree{}C")
+        lines.append(f"{label} & " + " & ".join(cells) + " \\\\")
     write("tab_shift", "\\begin{tabular}{@{}l" + "c" * len(cs) + "@{}}\n\\toprule\nScenario & " + " & ".join(c if c != "PPO" else "PPO (ARTO-EV)" for c in cs) + " \\\\\n\\midrule\n" + "\n".join(lines) + "\n\\bottomrule\n\\end{tabular}")
 
 
